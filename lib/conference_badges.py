@@ -9,10 +9,11 @@ def batch_badge_creator(names):
     # return list
 # print(batch_badge_creator(["Arel", "Carol"]))
 def assign_rooms(names):
-    assigned = []
-    for i, name in enumerate(names, start=1):
-        assigned.append(f"Hello, {name}! You'll be assigned to room {i}!")
-    return assigned
+    return [f"Hello, {name}! You'll be assigned to room {i}!" for i, name in enumerate(names, start=1)]
+    # assigned = []
+    # for i, name in enumerate(names, start=1):
+    #     assigned.append(f"Hello, {name}! You'll be assigned to room {i}!")
+    # return assigned
 
 # print(assign_rooms(["Arel", "Carol"]))
 
